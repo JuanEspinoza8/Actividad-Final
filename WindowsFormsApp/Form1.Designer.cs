@@ -28,13 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.dgvNegocio = new System.Windows.Forms.DataGridView();
+            this.pbxArticulos = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNegocio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxArticulos)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dgvNegocio
+            // 
+            this.dgvNegocio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNegocio.Location = new System.Drawing.Point(82, 30);
+            this.dgvNegocio.Name = "dgvNegocio";
+            this.dgvNegocio.Size = new System.Drawing.Size(629, 374);
+            this.dgvNegocio.TabIndex = 0;
+            this.dgvNegocio.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgvNegocio.SelectionChanged += new System.EventHandler(this.dgvNegocio_SelectionChanged);
+            // 
+            // pbxArticulos
+            // 
+            this.pbxArticulos.Location = new System.Drawing.Point(717, 30);
+            this.pbxArticulos.Name = "pbxArticulos";
+            this.pbxArticulos.Size = new System.Drawing.Size(321, 374);
+            this.pbxArticulos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxArticulos.TabIndex = 1;
+            this.pbxArticulos.TabStop = false;
+            this.pbxArticulos.Click += new System.EventHandler(this.pbxArticulos_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1064, 443);
+            this.Controls.Add(this.pbxArticulos);
+            this.Controls.Add(this.dgvNegocio);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNegocio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxArticulos)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dgvNegocio;
+        private System.Windows.Forms.PictureBox pbxArticulos;
     }
 }
 
