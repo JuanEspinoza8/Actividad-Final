@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp", "WindowsF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dominio", "dominio\dominio.csproj", "{C3016742-F4C1-470A-8D49-5F9286E8B14C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "negocio", "negocio\negocio.csproj", "{17CEAC0A-3D61-4C80-8E7C-2E5D230374A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "accesoDatos", "accesoDatos\accesoDatos.csproj", "{5DC4D2EF-00EA-4D48-957C-51776D6C8191}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{C3016742-F4C1-470A-8D49-5F9286E8B14C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3016742-F4C1-470A-8D49-5F9286E8B14C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3016742-F4C1-470A-8D49-5F9286E8B14C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17CEAC0A-3D61-4C80-8E7C-2E5D230374A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17CEAC0A-3D61-4C80-8E7C-2E5D230374A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17CEAC0A-3D61-4C80-8E7C-2E5D230374A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17CEAC0A-3D61-4C80-8E7C-2E5D230374A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DC4D2EF-00EA-4D48-957C-51776D6C8191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DC4D2EF-00EA-4D48-957C-51776D6C8191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DC4D2EF-00EA-4D48-957C-51776D6C8191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DC4D2EF-00EA-4D48-957C-51776D6C8191}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
