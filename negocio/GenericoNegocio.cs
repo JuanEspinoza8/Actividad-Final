@@ -38,8 +38,13 @@ namespace negocio
                     Articulo aux = new Articulo();
                     aux.Codigo = (string)datos.Lector["Codigo"];
                     aux.Nombre = (string)datos.Lector["Nombre"];
-                    aux.Descripcion = (string)datos.Lector["Descripcion"];
-                    aux.Imagen = (string)datos.Lector["ImagenUrl"];
+                    aux.Descripcion = (string)datos.Lector["Descripcion"]; 
+
+                    if (!(datos.Lector["ImagenUrl"] is DBNull))
+                    {
+                        aux.Imagen = (string)datos.Lector["ImagenUrl"];
+                    }
+
                     aux.Marca = new Marca();
                     aux.Marca.Descripcion = (string)datos.Lector["Marca"];
                     aux.Categoria = new Categoria();

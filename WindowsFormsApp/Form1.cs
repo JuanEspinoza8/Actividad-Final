@@ -28,11 +28,19 @@ namespace WindowsFormsApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            GenericoNegocio negocio = new GenericoNegocio();
-            listaArticulos = negocio.listar();
-            dgvNegocio.DataSource = listaArticulos;
-            dgvNegocio.Columns["Imagen"].Visible = false;
-            cargarImagen(listaArticulos[0].Imagen);
+            try
+            {
+                GenericoNegocio negocio = new GenericoNegocio();
+                listaArticulos = negocio.listar();
+                dgvNegocio.DataSource = listaArticulos;
+                dgvNegocio.Columns["Imagen"].Visible = false;
+                cargarImagen(listaArticulos[0].Imagen);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
 
         }
 
@@ -50,15 +58,15 @@ namespace WindowsFormsApp
         {
             try
             {
-
+                
                 pbxArticulos.Load(imagen);
             }
             catch (Exception ex)
             {
-
                 pbxArticulos.Load("https://uning.es/wp-content/uploads/2016/08/ef3-placeholder-image.jpg");
             }
         }
+
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {

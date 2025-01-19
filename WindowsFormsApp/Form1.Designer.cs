@@ -38,8 +38,11 @@
             // dgvNegocio
             // 
             this.dgvNegocio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNegocio.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvNegocio.Location = new System.Drawing.Point(12, 12);
+            this.dgvNegocio.MultiSelect = false;
             this.dgvNegocio.Name = "dgvNegocio";
+            this.dgvNegocio.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvNegocio.Size = new System.Drawing.Size(643, 374);
             this.dgvNegocio.TabIndex = 0;
             this.dgvNegocio.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
