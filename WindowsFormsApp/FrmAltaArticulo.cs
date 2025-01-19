@@ -64,5 +64,37 @@ namespace WindowsFormsApp
                 throw ex;
             }
         }
+
+        private void pbxArticulo_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void cargarImagen(string imagen)
+        {
+            try
+            {
+
+                pbxArticulo.Load(imagen);
+            }
+            catch (Exception ex)
+            {
+                pbxArticulo.Load("https://uning.es/wp-content/uploads/2016/08/ef3-placeholder-image.jpg");
+            }
+        }
+
+        private void txtImagen_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtImagen_Leave(object sender, EventArgs e)
+        {
+            cargarImagen(txtImagen.Text);
+        }
     }
 }

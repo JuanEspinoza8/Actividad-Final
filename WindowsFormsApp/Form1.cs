@@ -28,6 +28,11 @@ namespace WindowsFormsApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            cargar();
+
+        }
+        private void cargar()
+        {
             try
             {
                 GenericoNegocio negocio = new GenericoNegocio();
@@ -41,7 +46,6 @@ namespace WindowsFormsApp
 
                 MessageBox.Show(ex.ToString());
             }
-
         }
 
         private void dgvNegocio_SelectionChanged(object sender, EventArgs e)
@@ -72,6 +76,7 @@ namespace WindowsFormsApp
         {
             FrmAltaArticulo frmAltaArticulo = new FrmAltaArticulo();
             frmAltaArticulo.ShowDialog();
+            cargar();
         }
     }
 }
